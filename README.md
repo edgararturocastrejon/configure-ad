@@ -63,32 +63,49 @@ Setup Client-1 in Azure<p/>
 <p> Create the Client VM (Windows 10) named “Client-1”
 Username: labuser
 Password: Cyberlab123! <p/>
-<p> Attach it to the same region and Virtual Network as DC-1
-After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+<p> Attach it to the same region and Virtual Network as DC-1<p/>
+
+<p>
+  
+![CopyDC-1PrivateIPaddress](https://github.com/user-attachments/assets/0633b9d9-4dea-4b05-b15c-934decbca628)
+![Screen Shot 2024-09-06 at 2 35 23 PM](https://github.com/user-attachments/assets/24e04ddc-f7a7-4967-aadb-94d10910d808)
+![Screen Shot 2024-09-06 at 2 36 54 PM](https://github.com/user-attachments/assets/195c64ab-499e-4072-b4f5-c5388d6d9f05)
+![Screen Shot 2024-09-06 at 2 41 05 PM](https://github.com/user-attachments/assets/4537fbeb-bf1f-4710-8041-aceb3f734d4d)
+
+</p>
+<p>
+After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address. <p> First, go to the VM DC-1 and you copy DC-1 private IP address. Next, go to VM Client-1 and go to "Network settings" and click on "Network Interface / IP configuration". On the left panel click on "DNS server". Under DNS server click on "Custom" and copy paste DC-1 private IP address and click save. <p/> 
 From the Azure Portal, restart Client-1 <p/>
+</p>
+<br />
+
+</p>
+<br />
+
+![LogIntoVmDC-1](https://github.com/user-attachments/assets/b3a92607-ba27-4196-8824-52b04cae60e4)
+![Typewf msc](https://github.com/user-attachments/assets/dc022618-f60d-40ac-8aa7-a5ba25e11256)
+![Screen Shot 2024-09-06 at 2 01 22 PM](https://github.com/user-attachments/assets/763b7de3-80ca-4f3a-8040-5a1b89591872)
+![Screen Shot 2024-09-06 at 2 02 40 PM](https://github.com/user-attachments/assets/17ca1a8d-c6e2-4ee8-8d30-5ac35ea95972)
+![Screen Shot 2024-09-06 at 2 02 47 PM](https://github.com/user-attachments/assets/59c126ad-66a5-43e8-a008-94966350c838)
+
+<p>
+
+</p>
+<p>
+Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network to enable other computers from your network to find you, click "Yes". <p> Then continue to disable the Windows Firewall (for testing connectivity) On the bottom left type wf.msc to open up Windows firewall. Double click on "Windows Defender Firewall Properties". On "Domain Profile" "Private Profile" an "Public Profile" click off on their Firewall state. Click "Apply" and "OK". The Firewall is off! </p>
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 Login to Client-1
   
 Attempt to ping DC-1’s private IP address
 Ensure the ping succeeded
 From Client-1, open PowerShell and run ipconfig /all
 The output for the DNS settings should show DC-1’s private IP Address
-
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Log into the VM DC-1 using Microsoft Remote Desktop and disable the Windows Firewall (for testing connectivity)
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
