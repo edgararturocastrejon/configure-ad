@@ -33,7 +33,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![CreateADResourceGroup](https://github.com/user-attachments/assets/563714d2-2fe1-4ef6-b771-7ffa9bb55c44)
+![Screen Shot 2024-09-06 at 1 11 16 PM](https://github.com/user-attachments/assets/6c3481e1-d51c-4d07-8f5d-e7ba0c84861b)
+![CreateVmDC-1](https://github.com/user-attachments/assets/3c4bc155-bc33-4932-a92f-834c16aba7ea)
+
 </p>
 <p>
 Setup Domain Controller in Azure<p/>
