@@ -97,13 +97,19 @@ Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network t
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![LogginToClient-1](https://github.com/user-attachments/assets/4f5a590b-7ae9-4158-9dfb-250169df2ace)
+![Screen Shot 2024-09-06 at 2 48 23 PM](https://github.com/user-attachments/assets/14d947f1-3a02-4931-bc29-6831a55c873b)
+![Screen Shot 2024-09-06 at 2 49 15 PM](https://github.com/user-attachments/assets/93830f10-f85f-464b-a60c-5417cf494c4a)
+![Screen Shot 2024-09-06 at 2 55 37 PM](https://github.com/user-attachments/assets/6f006500-47fb-474a-8e4a-5414c851fe6e)
+![Screen Shot 2024-09-06 at 3 00 18 PM](https://github.com/user-attachments/assets/a6acbf73-0789-4cb7-8592-a5987b6067a1)
+
 </p>
 <p>
-Login to Client-1
-  
-Attempt to ping DC-1’s private IP address
-Ensure the ping succeeded
+Login to Client-1 <p/>
+Click no for all the private settings ane click yes for the "Network". 
+<p> Attempt to ping DC-1’s private IP address. On the bottowm left type "Powershell" and type ping and DC-1 private IP address. example: ping 10.0.0.4 <p/>
+<p> Ensure the ping succeeded. </p>
 From Client-1, open PowerShell and run ipconfig /all
 The output for the DNS settings should show DC-1’s private IP Address
 </p>
