@@ -8,6 +8,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Environments and Technologies Used</h2>
 
+- MacBook Pro
 - Microsoft Azure (Virtual Machines/Compute)
 - Microsoft Remote Desktop
 - Active Directory Domain Services
