@@ -191,18 +191,34 @@ User jane_admin as your admin account from now on
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-10 at 5 49 10 PM](https://github.com/user-attachments/assets/41245c05-f95a-44a3-8d9c-79ec705200c5)
+![Screen Shot 2024-09-10 at 5 49 23 PM](https://github.com/user-attachments/assets/01f8bc08-11a8-431d-a9de-e6079571f1c6)
+![Screen Shot 2024-09-10 at 5 52 46 PM](https://github.com/user-attachments/assets/1017e3b8-da99-4cb8-a025-397cf8f7e288)
+![Screen Shot 2024-09-10 at 5 59 50 PM](https://github.com/user-attachments/assets/71ccd112-f081-42ac-8e2e-8ca307331614)
+![Screen Shot 2024-09-10 at 6 03 27 PM](https://github.com/user-attachments/assets/235df2ea-2e3e-48bd-a8a9-17a36cb1b1b5)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Join Client-1 to your domain (mydomain.com) <p/> 
+<p> Right click the start menue and go to "Systems". Next click "Rename this PC (advanced)". Under the "Computer Name" tab click on "Change" and Clcik on "Domian". 
+<p/> After joining your domian restart your computer
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-09-10 at 6 10 33 PM](https://github.com/user-attachments/assets/6d748730-974f-41f7-a2f6-bd404659ab33)
+![Screen Shot 2024-09-10 at 6 11 40 PM](https://github.com/user-attachments/assets/0c82d58a-d8d0-47bb-a75b-833f199fc4c0)
+![Screen Shot 2024-09-10 at 6 13 29 PM](https://github.com/user-attachments/assets/376c1bd3-6f7b-4cf5-ac9a-567f816a8097)
+![Screen Shot 2024-09-10 at 6 14 19 PM](https://github.com/user-attachments/assets/ee0a852a-c60a-4fa0-bebf-10c822949308)
+![Screen Shot 2024-09-10 at 6 14 23 PM](https://github.com/user-attachments/assets/e2e00a57-4513-43a5-ad6a-15608717bfd6)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Login to the Domain Controller and verify Client-1 shows up in ADUC
+Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
 </p>
 <br />
 
