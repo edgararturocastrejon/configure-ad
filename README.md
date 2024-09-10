@@ -159,30 +159,34 @@ Create a Domain Admin user within the domain
   
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 Create a new OU named “_ADMINS”
-Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123!
-Add jane_admin to the “Domain Admins” Security Group
-Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
-User jane_admin as your admin account from now on
-
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-10 at 5 22 42 PM](https://github.com/user-attachments/assets/e00cb0cf-d329-4ecc-9c13-a1f8155eac24)
+![Screen Shot 2024-09-10 at 5 30 05 PM](https://github.com/user-attachments/assets/876a241f-6b47-49b3-9b8f-1e39d04c3d47)
+![Screen Shot 2024-09-10 at 5 29 21 PM](https://github.com/user-attachments/assets/b8455e37-995c-41f4-963d-708cfc94ed7a)
+
 </p>
 <p>
 Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123! <p/>
-<p> Add jane_admin to the “Domain Admins” Security Group <p/>
-Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
-User jane_admin as your admin account from now on
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![Screen Shot 2024-09-10 at 5 32 29 PM](https://github.com/user-attachments/assets/80d6a4e8-8845-4aef-9af3-efc30fee4912)
+![Screen Shot 2024-09-10 at 5 33 50 PM](https://github.com/user-attachments/assets/10712462-15dd-435c-be87-07347ebde024)
+![Screen Shot 2024-09-10 at 5 34 16 PM](https://github.com/user-attachments/assets/02c8e1bf-0418-4294-b0a1-2b456dea4409)
+![Screen Shot 2024-09-10 at 5 36 23 PM](https://github.com/user-attachments/assets/f89bac60-a240-4b2a-8860-136a2b149c34)
+![Screen Shot 2024-09-10 at 5 40 43 PM](https://github.com/user-attachments/assets/83b7260a-1f02-4d9f-93cd-64776a23b8b5)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Add jane_admin to the “Domain Admins” Security Group <p/>
+Log out / close the connection to DC-1 and log back in as “Domain\jane_admin”
+User jane_admin as your admin account from now on
 </p>
 <br />
 
