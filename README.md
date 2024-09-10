@@ -144,10 +144,18 @@ Restart and then log back into DC-1 as user: Domain\labuser
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-09-10 at 5 10 53 PM](https://github.com/user-attachments/assets/739afd26-b1d3-4280-828b-f3c3fd114989)
+![Screen Shot 2024-09-10 at 5 14 00 PM](https://github.com/user-attachments/assets/b510575d-232a-4bf4-a7a9-7d4ea7f408dc)
+![Screen Shot 2024-09-10 at 5 14 41 PM](https://github.com/user-attachments/assets/c36c1baf-d980-45a9-b2c2-8ed4b32497b4)
+![Screen Shot 2024-09-10 at 5 16 51 PM](https://github.com/user-attachments/assets/a83ea5ff-604e-4c58-81d4-4ea07c3792fb)
+![Create_ADMINS](https://github.com/user-attachments/assets/b7817ce7-2be5-41fd-8a7b-21c54bf56cf7)
+
 </p>
 <p>
 Create a Domain Admin user within the domain
+
+<p> In DC-1 cick the bottom left start button and click on "Windows Administrative Tools" and scroll down to select "Active Directory Users and Computers". <p/>
   
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 Create a new OU named “_ADMINS”
@@ -163,7 +171,10 @@ User jane_admin as your admin account from now on
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123! <p/>
+<p> Add jane_admin to the “Domain Admins” Security Group <p/>
+Log out / close the connection to DC-1 and log back in as “mydomain.com\jane_admin”
+User jane_admin as your admin account from now on
 </p>
 <br />
 
