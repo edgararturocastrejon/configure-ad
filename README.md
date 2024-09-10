@@ -116,10 +116,29 @@ The output for the DNS settings should show DC-1’s private IP Address
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+![GoToServerManager](https://github.com/user-attachments/assets/dc2237a0-f063-4b1b-ac3a-2befd3b8b7cd)
+![ActivateDomainServices](https://github.com/user-attachments/assets/92f4bccb-5b8d-4a55-8443-97c56f9e71c3)
+![Install](https://github.com/user-attachments/assets/3ec62d08-02c4-4615-877c-c650dd6dc732)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Login to DC-1 and install Active Directory Domain Services
+</p>
+<br />
+
+<p>
+  
+![ConfigureDomainController](https://github.com/user-attachments/assets/ddb30fcd-22ef-4931-a1ed-e4ab8f0ea208)
+![AddNewForest](https://github.com/user-attachments/assets/aa7704fd-4cbc-47bb-a03c-aa463ede2774)
+![Unclick](https://github.com/user-attachments/assets/6abf0369-ddf6-41a1-b778-3aa0b185d985)
+![Install](https://github.com/user-attachments/assets/089c3283-cec4-4477-a848-921d465abbd7)
+![SignOut](https://github.com/user-attachments/assets/a8e2b56d-b75d-42a1-9a21-893d7d4b24c6)
+
+</p>
+<p>
+On the top right corner there will be a flag with a yellow exclamation point. Click on it and then click on "Promote this server as a domain controller". <p> Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is) </p>
+Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <br />
 
@@ -195,3 +214,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
