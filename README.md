@@ -223,18 +223,42 @@ Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-09-10 at 6 32 20 PM](https://github.com/user-attachments/assets/0113121f-4264-4050-81d4-1f00ef05cc2b)
+![Screen Shot 2024-09-10 at 6 35 46 PM](https://github.com/user-attachments/assets/add87c40-b19c-4698-8999-36fa75ef4f9b)
+![Screen Shot 2024-09-10 at 6 36 56 PM](https://github.com/user-attachments/assets/00af795e-41dc-40a9-9205-74bb3f01dc5e)
+![Screen Shot 2024-09-10 at 6 38 23 PM](https://github.com/user-attachments/assets/6e7717f2-cbb3-4b49-8d9b-dbcd4a625424)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into Client-1 as mydomain.com\jane_admin <p/>
+Open system properties
+<p> Click “Remote Desktop” <p/>
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![Screen Shot 2024-09-10 at 6 49 03 PM](https://github.com/user-attachments/assets/749a3af9-f761-4434-9b90-40cfd48b33a1)
+![Screen Shot 2024-09-10 at 6 51 20 PM](https://github.com/user-attachments/assets/b8d9b0fb-9914-46ef-be30-1b14f557e00e)
+![Screen Shot 2024-09-10 at 6 55 12 PM](https://github.com/user-attachments/assets/d617d935-a31d-432d-97d6-e57a0b7aa1ff)
+![Screen Shot 2024-09-10 at 7 10 31 PM](https://github.com/user-attachments/assets/05673dc1-5cd5-40e3-9db3-e6d6d1e9b61c)
+![Screen Shot 2024-09-10 at 7 09 18 PM](https://github.com/user-attachments/assets/afc3070c-a8af-4cfa-b596-dd8eec561666)
+![Screen Shot 2024-09-10 at 7 07 43 PM](https://github.com/user-attachments/assets/73cdc778-b4d2-477e-89d1-7761f9017a0e)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create a bunch of additional users and attempt to log into client-1 with one of the users <p/>
+  
+<p> Login to DC-1 as jane_admin (if you're not already) <p/>
+Open PowerShell_ise as an administrator
+<p> Create a new File and paste the contents of the script into it <p/>
+Run the script and observe the accounts being created
+<p> When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES) Then, refresh to see new employees <p/>
+attempt to log into Client-1 with one of the accounts (take note of the password in the script = Password1)
+
 </p>
 <br />
 
