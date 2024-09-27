@@ -166,30 +166,31 @@ Create a new OU named “_ADMINS”
 <p>
   
 ![Screen Shot 2024-09-10 at 5 22 42 PM](https://github.com/user-attachments/assets/e00cb0cf-d329-4ecc-9c13-a1f8155eac24)
-![Screen Shot 2024-09-10 at 5 30 05 PM](https://github.com/user-attachments/assets/876a241f-6b47-49b3-9b8f-1e39d04c3d47)
-![Screen Shot 2024-09-10 at 5 29 21 PM](https://github.com/user-attachments/assets/b8455e37-995c-41f4-963d-708cfc94ed7a)
+![Screen Shot 2024-09-27 at 3 31 09 PM](https://github.com/user-attachments/assets/ab9a6177-8f23-4dcf-bc86-f1403f72b524)
+![Screen Shot 2024-09-27 at 3 32 28 PM](https://github.com/user-attachments/assets/2ad7e767-b50c-4f30-a036-59d1709e9f37)
+
 
 </p>
 <p>
 
-  Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123! <p/>
+  Create a new employee named “edgar castrejon” (same password) with the username of “edgar_admin” / Cyberlab123! <p/>
 
 </p>
 <br />
 
 <p>
   
-![Screen Shot 2024-09-10 at 5 32 29 PM](https://github.com/user-attachments/assets/80d6a4e8-8845-4aef-9af3-efc30fee4912)
+![Screen Shot 2024-09-27 at 3 33 56 PM](https://github.com/user-attachments/assets/0b5acfc9-fb05-41b9-9a64-47b7e4b3a84d)
 ![Screen Shot 2024-09-10 at 5 33 50 PM](https://github.com/user-attachments/assets/10712462-15dd-435c-be87-07347ebde024)
 ![Screen Shot 2024-09-10 at 5 34 16 PM](https://github.com/user-attachments/assets/02c8e1bf-0418-4294-b0a1-2b456dea4409)
-![Screen Shot 2024-09-10 at 5 36 23 PM](https://github.com/user-attachments/assets/f89bac60-a240-4b2a-8860-136a2b149c34)
-![Screen Shot 2024-09-10 at 5 40 43 PM](https://github.com/user-attachments/assets/83b7260a-1f02-4d9f-93cd-64776a23b8b5)
+![Screen Shot 2024-09-27 at 3 43 06 PM](https://github.com/user-attachments/assets/7946d593-3560-44a4-93ec-ce80fa403f2d)
+![Screen Shot 2024-09-27 at 3 46 32 PM](https://github.com/user-attachments/assets/6a73e9b8-77c2-4d5e-a601-8874224800a1)
 
 </p>
 <p>
-Add jane_admin to the “Domain Admins” Security Group <p/>
-Log out / close the connection to DC-1 and log back in as “Domain\jane_admin”
-User jane_admin as your admin account from now on
+Add edgar castrejon to the “Domain Admins” Security Group <p/>
+Log out / close the connection to DC-1 and log back in as “Domain\edgar_admin”
+User edgar_admin as your admin account from now on
 </p>
 <br />
 
@@ -227,14 +228,13 @@ Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
 
 <p>
 
-![Screen Shot 2024-09-10 at 6 32 20 PM](https://github.com/user-attachments/assets/0113121f-4264-4050-81d4-1f00ef05cc2b)
 ![Screen Shot 2024-09-10 at 6 35 46 PM](https://github.com/user-attachments/assets/add87c40-b19c-4698-8999-36fa75ef4f9b)
 ![Screen Shot 2024-09-10 at 6 36 56 PM](https://github.com/user-attachments/assets/00af795e-41dc-40a9-9205-74bb3f01dc5e)
 ![Screen Shot 2024-09-10 at 6 38 23 PM](https://github.com/user-attachments/assets/6e7717f2-cbb3-4b49-8d9b-dbcd4a625424)
 
 </p>
 <p>
-Log into Client-1 as mydomain.com\jane_admin <p/>
+Log into Client-1 as mydomain.com\edgar_admin <p/>
 Open system properties
 <p> Click “Remote Desktop” <p/>
 Allow “domain users” access to remote desktop
@@ -255,7 +255,7 @@ You can now log into Client-1 as a normal, non-administrative user now
 <p>
 Create a bunch of additional users and attempt to log into client-1 with one of the users <p/>
   
-<p> Login to DC-1 as jane_admin (if you're not already) <p/>
+<p> Login to DC-1 as edgar_admin (if you're not already) <p/>
 Open PowerShell_ise as an administrator
 <p> Create a new File and paste the contents of the script into it <p/>
 Run the script and observe the accounts being created
