@@ -74,8 +74,9 @@ Password: Cyberlab123! <p/>
 
 </p>
 <p>
-After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address.
-<p> First, go to the VM DC-1 and you copy DC-1 private IP address. Next, go to VM Client-1 and go to "Network settings" and click on "Network Interface / IP configuration". On the left panel click on "DNS server". Under DNS server click on "Custom" and copy paste DC-1 private IP address and click save. <p/> 
+After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address. <p/>
+<p> First, go to the VM DC-1 and you copy DC-1 private IP address. <p/> 
+Next, go to VM Client-1 and go to "Network settings" and click on "Network Interface / IP configuration". On the left panel click on "DNS server". Under DNS server click on "Custom" and copy paste DC-1 private IP address and click save. <p/> 
 From the Azure Portal, restart Client-1 <p/>
 </p>
 <br />
@@ -93,7 +94,9 @@ From the Azure Portal, restart Client-1 <p/>
 
 </p>
 <p>
-Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network to enable other computers from your network to find you, click "Yes". <p> Then continue to disable the Windows Firewall (for testing connectivity) On the bottom left type wf.msc to open up Windows firewall. Double click on "Windows Defender Firewall Properties". On "Domain Profile" "Private Profile" an "Public Profile" click off on their Firewall state. Click "Apply" and "OK". The Firewall is off! </p>
+Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network to enable other computers from your network to find you, click "Yes". <p> 
+  <p> Continue to disable the Windows Firewall (for testing connectivity) <p/>
+  On the bottom left type wf.msc to open up Windows firewall. Double click on "Windows Defender Firewall Properties". On "Domain Profile" "Private Profile" an "Public Profile" click off on their Firewall state. Click "Apply" and "OK". The Firewall is off! </p>
 </p>
 <br />
 
