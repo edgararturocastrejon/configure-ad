@@ -42,7 +42,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 Setup Domain Controller in Azure<p/>
-Create a Resource Group
+1) Create a Resource Group
 Create a Virtual Network and Subnet
 Create the Domain Controller VM (Windows Server 2022) named “DC-1”
 Username: labuser
@@ -60,7 +60,7 @@ After VM is created, set Domain Controller’s NIC Private IP address to be stat
 <p>
 Setup Client-1 in Azure<p/>
   
-<p> Create the Client VM (Windows 10) named “Client-1”
+<p> 2) Create the Client VM (Windows 10) named “Client-1”
 Username: labuser
 Password: Cyberlab123! <p/>
 <p> Attach it to the same region and Virtual Network as DC-1<p/>
@@ -75,7 +75,7 @@ Password: Cyberlab123! <p/>
 </p>
 <p>
 After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address. <p/>
-<p> First, go to the VM DC-1 and you copy DC-1 private IP address. <p/> 
+<p> 3) Go to the VM DC-1 and you copy DC-1 private IP address. <p/> 
 Next, go to VM Client-1 and go to "Network settings" and click on "Network Interface / IP configuration". On the left panel click on "DNS server". Under DNS server click on "Custom" and copy paste DC-1 private IP address and click save. <p/> 
 From the Azure Portal, restart Client-1 <p/>
 </p>
@@ -94,7 +94,7 @@ From the Azure Portal, restart Client-1 <p/>
 
 </p>
 <p>
-Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network to enable other computers from your network to find you, click "Yes". <p> 
+4) Log into the VM DC-1 using Microsoft Remote Desktop. <p> 
   <p> Continue to disable the Windows Firewall (for testing connectivity) <p/>
   On the bottom left type wf.msc to open up Windows firewall. Double click on "Windows Defender Firewall Properties". On "Domain Profile" "Private Profile" an "Public Profile" click off on their Firewall state. Click "Apply" and "OK". The Firewall is off! </p>
 </p>
@@ -112,7 +112,7 @@ Log into the VM DC-1 using Microsoft Remote Desktop. When asked on the Network t
 <p>
 Login to Client-1 <p/>
 Click no for all the private settings ane click yes for the "Network". 
-<p> Attempt to ping DC-1’s private IP address. On the bottowm left type "Powershell" and type ping and DC-1 private IP address. example: ping 10.0.0.4 <p/>
+<p> 5) Attempt to ping DC-1’s private IP address. On the bottowm left type "Powershell" and type ping and DC-1 private IP address. example: ping 10.0.0.4 <p/>
 <p> Ensure the ping succeeded. </p>
 From Client-1, open PowerShell and run ipconfig /all
 The output for the DNS settings should show DC-1’s private IP Address
@@ -127,7 +127,7 @@ The output for the DNS settings should show DC-1’s private IP Address
 
 </p>
 <p>
-Login to DC-1 and install Active Directory Domain Services
+6) Login to DC-1 and install Active Directory Domain Services
 </p>
 <br />
 
@@ -142,7 +142,8 @@ Login to DC-1 and install Active Directory Domain Services
 
 </p>
 <p>
-On the top right corner there will be a flag with a yellow exclamation point. Click on it and then click on "Promote this server as a domain controller". <p> Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is) </p>
+On the top right corner there will be a flag with a yellow exclamation point. Click on it and then click on "Promote this server as a domain controller". 
+<p> 7) Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is) </p>
 Restart and then log back into DC-1 as user: Domain\labuser
 </p>
 <br />
@@ -157,10 +158,8 @@ Restart and then log back into DC-1 as user: Domain\labuser
 
 </p>
 <p>
-Create a Domain Admin user within the domain
-
+8) Create a Domain Admin user within the domain
 <p> In DC-1 cick the bottom left start button and click on "Windows Administrative Tools" and scroll down to select "Active Directory Users and Computers". <p/>
-  
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 Create a new OU named “_ADMINS”
 </p>
@@ -175,9 +174,7 @@ Create a new OU named “_ADMINS”
 
 </p>
 <p>
-
-  Create a new employee named “edgar castrejon” (same password) with the username of “edgar_admin” / Cyberlab123! <p/>
-
+ 9) Create a new employee named “edgar castrejon” (same password) with the username of “edgar_admin” / Cyberlab123!
 </p>
 <br />
 
@@ -191,7 +188,7 @@ Create a new OU named “_ADMINS”
 
 </p>
 <p>
-Add edgar castrejon to the “Domain Admins” Security Group <p/>
+10) Add edgar castrejon to the “Domain Admins” Security Group <p/>
 Log out / close the connection to DC-1 and log back in as “Domain\edgar_admin”
 User edgar_admin as your admin account from now on
 </p>
@@ -207,7 +204,7 @@ User edgar_admin as your admin account from now on
 
 </p>
 <p>
-Join Client-1 to your domain (mydomain.com) <p/> 
+11) Join Client-1 to your domain (mydomain.com) <p/> 
 <p> Right click the start menue and go to "Systems". Next click "Rename this PC (advanced)". Under the "Computer Name" tab click on "Change" and Clcik on "Domian". 
 <p/> After joining your domian restart your computer
 
@@ -225,7 +222,7 @@ Join Client-1 to your domain (mydomain.com) <p/>
 </p>
 <p>
 Login to the Domain Controller and verify Client-1 shows up in ADUC
-Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
+12) Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
 </p>
 <br />
 
@@ -237,7 +234,7 @@ Create a new OU named “_CLIENTS” and drag and drop Client-1 into there
 
 </p>
 <p>
-Log into Client-1 as mydomain.com\edgar_admin <p/>
+13) Log into Client-1 as mydomain.com\edgar_admin <p/>
 Open system properties
 <p> Click “Remote Desktop” <p/>
 Allow “domain users” access to remote desktop
@@ -256,7 +253,7 @@ You can now log into Client-1 as a normal, non-administrative user now
 
 </p>
 <p>
-Create a bunch of additional users and attempt to log into client-1 with one of the users <p/>
+14) Create a bunch of additional users and attempt to log into client-1 with one of the users <p/>
   
 <p> Login to DC-1 as edgar_admin (if you're not already) <p/>
 Open PowerShell_ise as an administrator
