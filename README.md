@@ -257,7 +257,7 @@ You can now log into Client-1 as a normal, non-administrative user now
   
 <p> Login to DC-1 as edgar_admin (if you're not already) <p/>
 Open PowerShell_ise as an administrator
-<p> Create a new File and paste the contents of the script into it <p/>
+<p> Create a new File and paste the contents of the <a href= "https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">script <a/> into it <p/>
 Run the script and observe the accounts being created
 <p> When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES) Then, refresh to see new employees <p/>
 attempt to log into Client-1 with one of the accounts (take note of the password in the script = Password1)
